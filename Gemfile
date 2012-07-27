@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# HTML template language.
+gem "haml"
+
 # Rails framework.
 gem "rails", "3.2.7"
 
