@@ -6,6 +6,9 @@ gem "haml"
 # Rails framework.
 gem "rails", "3.2.7"
 
+# Client for The 86 API.
+gem "the86-client"
+
 group :test do
 
   # Capybara web acceptance testing.
