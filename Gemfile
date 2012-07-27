@@ -6,6 +6,9 @@ gem "haml"
 # Rails framework.
 gem "rails", "3.2.7"
 
+# Form handling
+gem "simple_form"
+
 # Taint/permit/require parameters passed from controller to model.
 gem "strong_parameters"
 
