@@ -1,1 +1,6 @@
 %h1 Sites
+
+%ul
+  - @sites.each do |site|
+    %li
+      = site.name
