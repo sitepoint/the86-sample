@@ -4,6 +4,10 @@ source 'https://rubygems.org'
 gem "rails", "3.2.7"
 
 group :test do
+
+  # Capybara web acceptance testing.
+  gem "capybara"
+
 end
 
 group :test, :development do
