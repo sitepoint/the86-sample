@@ -7,4 +7,9 @@ feature "The86 Sample" do
     response.should redirect_to("/sites")
   end
 
+  scenario "Sites page should have Sites heading" do
+    get "/sites"
+    response.body.should match("Sites")
+  end
+
 end
