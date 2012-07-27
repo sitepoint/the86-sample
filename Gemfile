@@ -6,6 +6,9 @@ gem "haml"
 # Rails framework.
 gem "rails", "3.2.7"
 
+# Taint/permit/require parameters passed from controller to model.
+gem "strong_parameters"
+
 # Client for The 86 API.
 gem "the86-client"
 
