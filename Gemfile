@@ -27,4 +27,7 @@ group :test, :development do
   # RSpec: test framework.
   gem "rspec-rails"
 
+  # Better than irb.
+  gem "pry"
+
 end
