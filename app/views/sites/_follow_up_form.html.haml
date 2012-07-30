@@ -1,0 +1,7 @@
+%p Post follow-up
+
+= simple_form_for(new_post, url: site_conversation_posts_path(site.slug, conversation.id), namespace: "conversation_#{conversation.id}") do |f|
+  = render partial: "/form_errors", locals: { record: new_post }
+  = f.input :content, label: "Follow up", as: :text, input_html: { size: "80x2" }
+  = f.input :conversation_id, as: :hidden, input_html: { value: conversation.id }
+  = f.button :submit, value: "Follow up"

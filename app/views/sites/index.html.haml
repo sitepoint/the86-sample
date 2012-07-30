@@ -2,5 +2,4 @@
 
 %ul
   - @sites.each do |site|
-    %li
-      = site.name
+    %li= link_to site.name, site_path(site.slug)

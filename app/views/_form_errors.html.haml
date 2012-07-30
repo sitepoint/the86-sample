@@ -1,0 +1,6 @@
+- if record.errors.any?
+  .errors
+    %p Please check the following:
+    %ul
+      - record.errors.full_messages.each do |message|
+        %li= message

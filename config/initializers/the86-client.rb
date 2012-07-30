@@ -1,3 +1,5 @@
+require "the86-client/active_model"
+
 # The domain, and optionally port.
 The86::Client.domain = "localhost:3000"
 

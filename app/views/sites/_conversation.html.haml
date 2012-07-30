@@ -1,0 +1,24 @@
+%hr
+.conversation
+
+  %ul.conversation
+    - conversation.posts.each do |post|
+      %li
+        - if post.reply?
+          %p
+            = "#{post.user.name}, in reply to #{post.in_reply_to.user.name}, says:"
+        - else
+          %p
+            = post.user.name
+            says:
+        %p= post.content
+        - if current_user?
+          = render partial: "sites/reply_form", locals: { site: @presenter.site,
+              conversation: conversation,
+              in_reply_to: post,
+              new_post: @presenter.new_reply_to(post) }
+
+  .follow-up
+    = render partial: "sites/follow_up_form", locals: { site: @presenter.site,
+              conversation: conversation,
+              new_post: @presenter.new_follow_up(conversation) }

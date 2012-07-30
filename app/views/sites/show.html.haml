@@ -1,0 +1,13 @@
+%h1= @presenter.site.name
+
+- if current_user?
+  = render partial: "sites/new_conversation",
+      locals: { site: @presenter.site, post: @presenter.new_post }
+
+- if @presenter.site.conversations.any?
+  %ul
+  - @presenter.site.conversations.each do |c|
+    %li
+      = render partial: "sites/conversation", locals: { conversation: c }
+- else
+  %p No conversations yet

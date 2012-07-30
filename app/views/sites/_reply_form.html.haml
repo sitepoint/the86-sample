@@ -1,0 +1,7 @@
+%p Post reply
+
+= simple_form_for(new_post, url: site_conversation_posts_path(site.slug, conversation.id), namespace: "in_reply_to_post_#{in_reply_to.id}") do |f|
+  = render partial: "/form_errors", locals: { record: new_post }
+  = f.input :content, label: "Post reply", as: :text, input_html: { size: "80x2" }
+  = f.input :in_reply_to_id, as: :hidden, input_html: { value: in_reply_to.id }
+  = f.button :submit, value: "Reply"

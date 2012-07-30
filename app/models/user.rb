@@ -43,5 +43,6 @@ class User
   end
 
   attr_accessor :id, :name
+  attr_accessor :oauth_token
 
 end

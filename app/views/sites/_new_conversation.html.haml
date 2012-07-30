@@ -1,0 +1,6 @@
+%p Post update
+
+= simple_form_for(post, url: site_conversations_path(site.slug) ) do |f|
+  = render partial: "/form_errors", locals: { record: post }
+  = f.input :content, label: "Post update", as: :text, input_html: { size: "80x4" }
+  = f.button :submit, value: "Post"
