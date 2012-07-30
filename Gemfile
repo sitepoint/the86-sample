@@ -30,4 +30,10 @@ group :test, :development do
   # Better than irb.
   gem "pry"
 
+  # VCR: record and playback HTTP interactions.
+  gem "vcr"
+
+  # WebMock: stub and mock HTTP requests; used by VCR.
+  gem "webmock"
+
 end

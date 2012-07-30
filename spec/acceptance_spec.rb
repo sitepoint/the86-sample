@@ -6,7 +6,7 @@ require "spec_helper"
 # subsequent testing.
 # See VCR: https://github.com/myronmarston/vcr
 
-feature "The86 Sample" do
+feature "The86 Sample", :vcr do
 
   scenario "signing in" do
     visit "/"

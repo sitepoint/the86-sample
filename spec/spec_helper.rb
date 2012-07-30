@@ -39,3 +39,18 @@ end
 
 include AppAcceptanceHelpers
 include WebAcceptanceHelpers
+
+require "vcr"
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/vcr_cassettes'
+  c.hook_into :webmock
+  c.configure_rspec_metadata! # tag tests with :vcr
+end
+
+# https://www.relishapp.com/myronmarston/vcr/v/2-2-4/docs/test-frameworks/usage-with-rspec-metadata
+RSpec.configure do |c|
+  # so we can use `:vcr` rather than `:vcr => true`;
+  # in RSpec 3 this will no longer be necessary.
+  c.treat_symbols_as_metadata_keys_with_true_values = true
+end

@@ -1,0 +1,1259 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://sample:sample@localhost:3000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: ! '{"name":"John Citizen"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"3ce75b6d6d9feedca1c34f6a079249bd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _the86_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTVmNTNiNDFhMDQ1MDUyYWMxNmZjOThlNjhjMmEzZTJkBjsAVA%3D%3D--73dcfbd24bd508aa3f83a5badbb10d1f637171c0;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 185c4d4e590cac79b41e51621f0299bb
+      X-Runtime:
+      - '0.013162'
+      Content-Length:
+      - '275'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":194,"name":"John Citizen","url":"http://localhost:3000/api/v1/users/194","access_tokens":[{"api_client_name":"sample","created_at":"2012-07-30T06:15:01Z","id":106,"token":"x1CbG9J_b815W4AwShnTlHU0YTAC8OBQJxcVcWYZJAo","updated_at":"2012-07-30T06:15:01Z","user_id":194}]}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"bcb5616b260b0546449b7fdb055a7315"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 079db5c532ff49c037bc425b46ea53c4
+      X-Runtime:
+      - '0.008254'
+      Content-Length:
+      - '468'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":20,"name":"Sample","slug":"sample","url":"http://example.org/","created_at":"2012-07-27T12:29:05Z","updated_at":"2012-07-27T12:29:05Z"},{"id":22,"name":"test","slug":"test","url":"http://example.org/test","created_at":"2012-07-30T04:38:48Z","updated_at":"2012-07-30T04:38:48Z"},{"id":24,"name":"Integration
+        Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"bcb5616b260b0546449b7fdb055a7315"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 42a0584d84005d544f2947aadfc3b482
+      X-Runtime:
+      - '0.008237'
+      Content-Length:
+      - '468'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":20,"name":"Sample","slug":"sample","url":"http://example.org/","created_at":"2012-07-27T12:29:05Z","updated_at":"2012-07-27T12:29:05Z"},{"id":22,"name":"test","slug":"test","url":"http://example.org/test","created_at":"2012-07-30T04:38:48Z","updated_at":"2012-07-30T04:38:48Z"},{"id":24,"name":"Integration
+        Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"33efa934a6d5d3014b38d77a8dea9a1c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 08b44154719fe29fbf498b155c8618c0
+      X-Runtime:
+      - '0.006338'
+      Content-Length:
+      - '182'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":24,"name":"Integration Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"d751713988987e9331980363e24189ce"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b2c20785a7f7a1767c62789a7bab4bfd
+      X-Runtime:
+      - '0.007673'
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: UTF-8
+      string: ! '{"content":"What is NSString?"}'
+    headers:
+      Authorization:
+      - Bearer x1CbG9J_b815W4AwShnTlHU0YTAC8OBQJxcVcWYZJAo
+      Content-Type:
+      - application/json
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"6c3844c81b00508d40b21c5850762668"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _the86_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWMxMTViNmNjZTFlYmQzYWYwNjk4YWVjYzg1MmQ1OGIwBjsAVA%3D%3D--14c9579777c744cf82d488ddef0469b0901dab63;
+        path=/; HttpOnly
+      X-Request-Id:
+      - c427788d4d2ceb37e8ed86f6d7175fb0
+      X-Runtime:
+      - '0.020383'
+      Content-Length:
+      - '313'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}}]}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"33efa934a6d5d3014b38d77a8dea9a1c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 52a7fbcf6ff16be58023ed7945f964b9
+      X-Runtime:
+      - '0.006456'
+      Content-Length:
+      - '182'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":24,"name":"Integration Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"5b829cfc6b7f5495805dd4e1aea77e07"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 383f8c80765b6ba282aa5e135cb3d4ac
+      X-Runtime:
+      - '0.016353'
+      Content-Length:
+      - '315'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"5b829cfc6b7f5495805dd4e1aea77e07"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 54031878bda855957abcba259b047581
+      X-Runtime:
+      - '0.037920'
+      Content-Length:
+      - '315'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: post
+    uri: http://sample:sample@localhost:3000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: ! '{"name":"Angry Internet Dweller"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"68e45be8129b8082c0409a845fa33ce9"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _the86_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTE2ZDFmZDA1NTk1ZTQ1Y2YyZGVjNDY2OWY1MjhhNWM5BjsAVA%3D%3D--2d3d1db0ea4e94565a03c372eb290ddba878ae90;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 38b580dc2788eb8fd1a746448e57131a
+      X-Runtime:
+      - '0.012769'
+      Content-Length:
+      - '285'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":195,"name":"Angry Internet Dweller","url":"http://localhost:3000/api/v1/users/195","access_tokens":[{"api_client_name":"sample","created_at":"2012-07-30T06:15:01Z","id":107,"token":"oVXftxoSsnFz1ShGtW7nbYKZxly1cTosCEpoPtl7sfo","updated_at":"2012-07-30T06:15:01Z","user_id":195}]}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"bcb5616b260b0546449b7fdb055a7315"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ccf091bca7d226746bbc0153263d6b84
+      X-Runtime:
+      - '0.008385'
+      Content-Length:
+      - '468'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":20,"name":"Sample","slug":"sample","url":"http://example.org/","created_at":"2012-07-27T12:29:05Z","updated_at":"2012-07-27T12:29:05Z"},{"id":22,"name":"test","slug":"test","url":"http://example.org/test","created_at":"2012-07-30T04:38:48Z","updated_at":"2012-07-30T04:38:48Z"},{"id":24,"name":"Integration
+        Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"bcb5616b260b0546449b7fdb055a7315"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2ea8d60eeea5934adcf1c98867154195
+      X-Runtime:
+      - '0.008565'
+      Content-Length:
+      - '468'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":20,"name":"Sample","slug":"sample","url":"http://example.org/","created_at":"2012-07-27T12:29:05Z","updated_at":"2012-07-27T12:29:05Z"},{"id":22,"name":"test","slug":"test","url":"http://example.org/test","created_at":"2012-07-30T04:38:48Z","updated_at":"2012-07-30T04:38:48Z"},{"id":24,"name":"Integration
+        Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"33efa934a6d5d3014b38d77a8dea9a1c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 178e387403c0ba165c4e4576ca100489
+      X-Runtime:
+      - '0.006533'
+      Content-Length:
+      - '182'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":24,"name":"Integration Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"5b829cfc6b7f5495805dd4e1aea77e07"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - be9f5c545bec9a8f82a80e0aa62ab81a
+      X-Runtime:
+      - '0.016074'
+      Content-Length:
+      - '315'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"5b829cfc6b7f5495805dd4e1aea77e07"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5183e9353945aee4bf36f90b79b667ed
+      X-Runtime:
+      - '0.015943'
+      Content-Length:
+      - '315'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/sites/integration-test/conversations/74/posts
+    body:
+      encoding: UTF-8
+      string: ! '{"content":"You are WRONG on the internet!","in_reply_to_id":100}'
+    headers:
+      Authorization:
+      - Bearer oVXftxoSsnFz1ShGtW7nbYKZxly1cTosCEpoPtl7sfo
+      Content-Type:
+      - application/json
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"78a482874b777f6a1f8938a985f11475"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _the86_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTQ3YzI0MjBmNjM4M2Q1MzEzNGE4NjVhZDZjYTkzYzNjBjsAVA%3D%3D--37485737d5a84384576119b90eb68e7789a58c2f;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 018325c03deb05af8353f6af2064f70d
+      X-Runtime:
+      - '0.018168'
+      Content-Length:
+      - '308'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":101,"content":"You are WRONG on the internet!","in_reply_to_id":100,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","in_reply_to":{"id":100,"user":{"id":194,"name":"John
+        Citizen"}},"user":{"id":195,"name":"Angry Internet Dweller","url":"http://localhost:3000/api/v1/users/195"}}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"33efa934a6d5d3014b38d77a8dea9a1c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a4105227be9e2630387883a201f184c2
+      X-Runtime:
+      - '0.006762'
+      Content-Length:
+      - '182'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":24,"name":"Integration Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:01 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"f5113c4b42461ae5e92e5a2cfbd15758"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f48c9651015bc1e2c1086c61a0ae3d0b
+      X-Runtime:
+      - '0.021798'
+      Content-Length:
+      - '624'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}},{"id":101,"content":"You
+        are WRONG on the internet!","in_reply_to_id":100,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","in_reply_to":{"id":100,"user":{"id":194,"name":"John
+        Citizen"}},"user":{"id":195,"name":"Angry Internet Dweller","url":"http://localhost:3000/api/v1/users/195"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"f5113c4b42461ae5e92e5a2cfbd15758"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 46dd595318a2f563acef0472b353c0a9
+      X-Runtime:
+      - '0.020316'
+      Content-Length:
+      - '624'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}},{"id":101,"content":"You
+        are WRONG on the internet!","in_reply_to_id":100,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","in_reply_to":{"id":100,"user":{"id":194,"name":"John
+        Citizen"}},"user":{"id":195,"name":"Angry Internet Dweller","url":"http://localhost:3000/api/v1/users/195"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: post
+    uri: http://sample:sample@localhost:3000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: ! '{"name":"Spammer"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"bfc465a3a57fcd486477a22b8db22ad0"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _the86_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWJiYWY3NmU2YmNiODY5NzNkNTQxYjExYzMyY2Q4NzQ1BjsAVA%3D%3D--1c7cb5a6d1782f9eaf01d6ff506e0985bc69b3ac;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 4a4b808586b90a5a1cc99d73121a0995
+      X-Runtime:
+      - '0.012934'
+      Content-Length:
+      - '270'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":196,"name":"Spammer","url":"http://localhost:3000/api/v1/users/196","access_tokens":[{"api_client_name":"sample","created_at":"2012-07-30T06:15:02Z","id":108,"token":"czFPjQNP652BXADQNVdupwyIhn7_XZRG7wNiN0YgSnI","updated_at":"2012-07-30T06:15:02Z","user_id":196}]}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"bcb5616b260b0546449b7fdb055a7315"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f2bf2c2a5009d07bdb156b81aad5864b
+      X-Runtime:
+      - '0.008127'
+      Content-Length:
+      - '468'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":20,"name":"Sample","slug":"sample","url":"http://example.org/","created_at":"2012-07-27T12:29:05Z","updated_at":"2012-07-27T12:29:05Z"},{"id":22,"name":"test","slug":"test","url":"http://example.org/test","created_at":"2012-07-30T04:38:48Z","updated_at":"2012-07-30T04:38:48Z"},{"id":24,"name":"Integration
+        Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"bcb5616b260b0546449b7fdb055a7315"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fea33c33280ba02ef74896e71a485006
+      X-Runtime:
+      - '0.008153'
+      Content-Length:
+      - '468'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":20,"name":"Sample","slug":"sample","url":"http://example.org/","created_at":"2012-07-27T12:29:05Z","updated_at":"2012-07-27T12:29:05Z"},{"id":22,"name":"test","slug":"test","url":"http://example.org/test","created_at":"2012-07-30T04:38:48Z","updated_at":"2012-07-30T04:38:48Z"},{"id":24,"name":"Integration
+        Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"33efa934a6d5d3014b38d77a8dea9a1c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aa52a8f4edcc7078481309bfddc447e2
+      X-Runtime:
+      - '0.006647'
+      Content-Length:
+      - '182'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":24,"name":"Integration Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"f5113c4b42461ae5e92e5a2cfbd15758"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7bef3d13a85e1ece77e620d1eb51eed4
+      X-Runtime:
+      - '0.020616'
+      Content-Length:
+      - '624'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}},{"id":101,"content":"You
+        are WRONG on the internet!","in_reply_to_id":100,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","in_reply_to":{"id":100,"user":{"id":194,"name":"John
+        Citizen"}},"user":{"id":195,"name":"Angry Internet Dweller","url":"http://localhost:3000/api/v1/users/195"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"f5113c4b42461ae5e92e5a2cfbd15758"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 95935e28fe479a0164c89b86127a75ef
+      X-Runtime:
+      - '0.020349'
+      Content-Length:
+      - '624'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}},{"id":101,"content":"You
+        are WRONG on the internet!","in_reply_to_id":100,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","in_reply_to":{"id":100,"user":{"id":194,"name":"John
+        Citizen"}},"user":{"id":195,"name":"Angry Internet Dweller","url":"http://localhost:3000/api/v1/users/195"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/sites/integration-test/conversations/74/posts
+    body:
+      encoding: UTF-8
+      string: ! '{"content":"Excellent post. Check out my site."}'
+    headers:
+      Authorization:
+      - Bearer czFPjQNP652BXADQNVdupwyIhn7_XZRG7wNiN0YgSnI
+      Content-Type:
+      - application/json
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"d31895185d6d4cadcc75d138443997cc"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _the86_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWE4MzdiYWQzYjJiMmQ2ZTdkOTRmMTE2MDliNDk3MWI5BjsAVA%3D%3D--77bc2fd4cf7ffe56c0c04a47c9084577e459e86c;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 0545c35f359f6b6f3825baeb21389a5b
+      X-Runtime:
+      - '0.015903'
+      Content-Length:
+      - '233'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":102,"content":"Excellent post. Check out my site.","in_reply_to_id":null,"created_at":"2012-07-30T06:15:02Z","updated_at":"2012-07-30T06:15:02Z","user":{"id":196,"name":"Spammer","url":"http://localhost:3000/api/v1/users/196"}}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"33efa934a6d5d3014b38d77a8dea9a1c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 780243e193b504ead3104db65e0c7d71
+      X-Runtime:
+      - '0.027510'
+      Content-Length:
+      - '182'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":24,"name":"Integration Test Site","slug":"integration-test","url":"http://example.org/integration-test","created_at":"2012-07-30T04:39:44Z","updated_at":"2012-07-30T04:39:44Z"}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"45f5184d5879c08ef2ccb920348550cc"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 20a306a8370681cfeb592a7ecb8ad388
+      X-Runtime:
+      - '0.023365'
+      Content-Length:
+      - '858'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:02Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}},{"id":101,"content":"You
+        are WRONG on the internet!","in_reply_to_id":100,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","in_reply_to":{"id":100,"user":{"id":194,"name":"John
+        Citizen"}},"user":{"id":195,"name":"Angry Internet Dweller","url":"http://localhost:3000/api/v1/users/195"}},{"id":102,"content":"Excellent
+        post. Check out my site.","in_reply_to_id":null,"created_at":"2012-07-30T06:15:02Z","updated_at":"2012-07-30T06:15:02Z","user":{"id":196,"name":"Spammer","url":"http://localhost:3000/api/v1/users/196"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+- request:
+    method: get
+    uri: http://sample:sample@localhost:3000/api/v1/sites/integration-test/conversations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"45f5184d5879c08ef2ccb920348550cc"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9046a2b5c178d0a65b00c46b9e4af266
+      X-Runtime:
+      - '0.022983'
+      Content-Length:
+      - '858'
+      Connection:
+      - keep-alive
+      Server:
+      - thin 1.4.1 codename Chromeo
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":74,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:02Z","posts":[{"id":100,"content":"What
+        is NSString?","in_reply_to_id":null,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","user":{"id":194,"name":"John
+        Citizen","url":"http://localhost:3000/api/v1/users/194"}},{"id":101,"content":"You
+        are WRONG on the internet!","in_reply_to_id":100,"created_at":"2012-07-30T06:15:01Z","updated_at":"2012-07-30T06:15:01Z","in_reply_to":{"id":100,"user":{"id":194,"name":"John
+        Citizen"}},"user":{"id":195,"name":"Angry Internet Dweller","url":"http://localhost:3000/api/v1/users/195"}},{"id":102,"content":"Excellent
+        post. Check out my site.","in_reply_to_id":null,"created_at":"2012-07-30T06:15:02Z","updated_at":"2012-07-30T06:15:02Z","user":{"id":196,"name":"Spammer","url":"http://localhost:3000/api/v1/users/196"}}]}]'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2012 06:15:02 GMT
+recorded_with: VCR 2.2.4
