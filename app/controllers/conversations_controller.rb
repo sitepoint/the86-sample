@@ -6,11 +6,12 @@ class ConversationsController < ApplicationController
         oauth_token: current_user.oauth_token,
       )
     )
-    if conversation.save
-      redirect_to site_url(site.slug)
-    else
-      render "sites/show"
-    end
+    conversation.save
+    redirect_to site_url(site.slug)
+  rescue The86::Client::ValidationFailed => e
+    # TODO: display validation errors
+    # render "sites/show"
+    redirect_to site_url(site.slug)
   end
 
   private

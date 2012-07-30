@@ -8,11 +8,12 @@ class PostsController < ApplicationController
         oauth_token: current_user.oauth_token,
       )
     )
-    if post.save
-      redirect_to site_url(site)
-    else
-      render_error(post)
-    end
+    post.save
+    redirect_to site_url(site)
+  rescue The86::Client::ValidationFailed => e
+    # TODO: show validation errors
+    # render_error(post)
+    redirect_to site_url(site)
   end
 
   private

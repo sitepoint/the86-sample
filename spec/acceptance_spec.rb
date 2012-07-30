@@ -58,14 +58,6 @@ feature "The86 Sample" do
         "Excellent post. Check out my site."
     end
 
-    scenario "attempt to post empty conversation" do
-      pending
-      visit "/sites/integration-test"
-      click_button "Post"
-
-      expect_to_see "Content can't be blank", "Please check the following:"
-    end
-
   end
 
   context "signed out" do
