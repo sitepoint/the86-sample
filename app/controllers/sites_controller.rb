@@ -11,7 +11,7 @@ class SitesController < ApplicationController
   private
 
   def site
-    The86::Client.site(params[:site_id] || params[:id])
+    @_site ||= The86::Client.site(params[:site_id] || params[:id]).load
   end
 
 end
