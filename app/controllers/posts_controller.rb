@@ -16,6 +16,15 @@ class PostsController < ApplicationController
     redirect_to site_url(site)
   end
 
+  def hide
+    if params[:hide_type] == "user"
+      post.hide(oauth_token: current_user.oauth_token)
+    else
+      post.hide
+    end
+    redirect_to site_url(site)
+  end
+
   private
 
   def render_error(post)
@@ -28,6 +37,10 @@ class PostsController < ApplicationController
       @presenter.set_new_post(post)
     end
     render "sites/show"
+  end
+
+  def post
+    @_post ||= conversation.posts.build(id: params[:post_id] || params[:id])
   end
 
   # Conversation for the posted ID, or nil.

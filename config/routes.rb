@@ -9,7 +9,11 @@ The86Sample::Application.routes.draw do
       only: [:create] do
 
       resources :posts,
-        only: [:create]
+        only: [:create] do
+
+        post :hide
+
+      end
 
     end
 

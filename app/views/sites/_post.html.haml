@@ -1,0 +1,23 @@
+- if post.reply?
+  %p
+    = "#{post.user.name}, in reply to #{post.in_reply_to.user.name}, says:"
+- else
+  %p
+    = post.user.name
+    says:
+
+%p= post.content
+
+= form_tag site_conversation_post_hide_path(site_presenter.site.slug, conversation.id, post.id), method: :post do
+  = hidden_field_tag :hide_type, "admin"
+  = submit_tag "Hide (Admin)"
+
+- if current_user?
+  = form_tag site_conversation_post_hide_path(site_presenter.site.slug, conversation.id, post.id), method: :post do
+    = hidden_field_tag :hide_type, "user"
+    = submit_tag "Hide (User)"
+
+  = render partial: "sites/reply_form", locals: { site: site_presenter.site,
+      conversation: conversation,
+      in_reply_to: post,
+      new_post: site_presenter.new_reply_to(post) }
