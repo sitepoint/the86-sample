@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem "haml"
 
 # Rails framework.
-gem "rails", "3.2.7"
+gem "rails", "3.2.8"
 
 # Form handling
 gem "simple_form"
